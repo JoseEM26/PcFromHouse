@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AhorraYa</string>
+
+    <!-- Tabs -->
+    <string name="tab_inicio">Inicio</string>
+    <string name="tab_nuevo">Nuevo</string>
+    <string name="tab_historial">Historial</string>
+
+    <!-- Dashboard -->
+    <string name="lbl_saldo">Saldo</string>
+    <string name="lbl_ingresos">Ingresos</string>
+    <string name="lbl_gastos">Gastos</string>
+    <string name="btn_exportar_csv">Exportar CSV</string>
+    <string name="btn_sincronizar">Sincronizar</string>
+    <string name="msg_exportado_ok">Archivo CSV generado</string>
+    <string name="msg_sinc_ok">Sincronización completada</string>
+
+    <!-- Nuevo -->
+    <string name="titulo_nuevo_mov">Nuevo Movimiento</string>
+    <string name="hint_monto">Monto</string>
+    <string name="hint_descripcion">Descripción (opcional)</string>
+    <string name="rb_ingreso">Ingreso</string>
+    <string name="rb_gasto">Gasto</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="msg_monto_obligatorio">Ingresa un monto válido mayor que 0</string>
+    <string name="msg_guardado_ok">Movimiento guardado</string>
+
+
+    <!-- Historial -->
+    <string name="hint_buscar">Buscar descripción</string>
+    <string name="msg_lista_vacia">No hay movimientos</string>
+    <string name="menu_eliminar">Eliminar</string>
+
+    <!-- Formatos -->
+    <string name="fmt_monedas">S/ %1$.2f</string>
+</resources>

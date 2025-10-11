@@ -14,48 +14,32 @@ import java.util.Locale
 // Clase principal de la actividad
 class MainActivity : AppCompatActivity() {
 
-    // Inicialización de ViewBinding para la actividad
-    private lateinit var binding: ActivityMainBinding
-    // Lista de productos que se van a mostrar
-    private val productos = mutableListOf<Product>()
-    // Adaptador para el RecyclerView que mostrará los productos
+    private lateinit var binding: ActivityMainBinding;
+    private val productos= mutableListOf<Product>()
     private lateinit var adapter: ProductAdapter
 
-    // Variables para manejar el diálogo y la selección de imagen
-    private var dialogBinding: DialogFormProductoBinding? = null
-    private var pickedImageUri: Uri? = null
+    private var dialogBinding:DialogFormProductoBinding?=null
+    private var pickedImagenUri:Uri?=null
 
-    // Registro de un resultado de actividad para seleccionar una imagen
-    private val pickImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
-        // Si se selecciona una imagen, se asigna la URI y se actualiza la vista previa
-        if (uri != null) {
-            pickedImageUri = uri
+    private val pickImage=registerForActivityResult(ActivityResultContracts.GetContent()){
+        uri-> if(uri!=null){
+            pickedImagenUri=uri
             dialogBinding?.imgPreview?.setImageURI(uri)
-        }
+    }
     }
 
-    // Generador simple de IDs para productos
-    private var nextId = 1
+    private var nextId=1
 
-    // Método que se ejecuta cuando se crea la actividad
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Inicialización del binding para la actividad
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configuración del Spinner (dropdown) para seleccionar el estado del producto (Nuevo/Usado)
-        ArrayAdapter.createFromResource(
-            this,
-            R.array.estado_items,  // Array de estados desde los recursos
-            android.R.layout.simple_spinner_item
-        ).also { ad ->
-            ad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            binding.spEstado.adapter = ad  // Asignar el adaptador al Spinner
+        ArrayAdapter.createFromResource(this,R.array.estado_items,android.R.layout.simple_spinner_item).also {
+            ad-> ad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            binding.spEstado.adapter=ad
         }
-
-        // Inicialización del RecyclerView con el adaptador que maneja la lista de productos
         adapter = ProductAdapter(productos) { updateResumen() }
         binding.rvProductos.layoutManager = LinearLayoutManager(this)  // Disposición en lista vertical
         binding.rvProductos.adapter = adapter  // Asignación del adaptador al RecyclerView
@@ -67,19 +51,18 @@ class MainActivity : AppCompatActivity() {
 
         // Mostrar el resumen inicial de los productos
         updateResumen()
-    }
 
-    // Método que abre un cuadro de diálogo para ingresar los detalles de un nuevo producto
+
+    }
     private fun openNuevoProductoDialog() {
         // Inflar el layout del diálogo
         val b = DialogFormProductoBinding.inflate(layoutInflater)
         dialogBinding = b
-        pickedImageUri = null  // Reiniciar la URI de la imagen seleccionada
+        pickedImagenUri = null  // Reiniciar la URI de la imagen seleccionada
 
         // Configuración de la lista de categorías usando un ListView
         val cats = resources.getStringArray(R.array.categorias_items)
-        val listAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_single_choice, cats)
-        b.lvCategorias.adapter = listAdapter  // Asignar el adaptador al ListView
+        b.lvCategorias.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_single_choice, cats)
         b.lvCategorias.choiceMode = android.widget.ListView.CHOICE_MODE_SINGLE  // Selección de un solo ítem
         b.lvCategorias.setItemChecked(0, true) // Preseleccionar la primera categoría
 
@@ -94,7 +77,7 @@ class MainActivity : AppCompatActivity() {
             .setNegativeButton(getString(R.string.btn_cancelar)) { d, _ ->
                 // Cerrar el diálogo sin guardar
                 dialogBinding = null
-                pickedImageUri = null
+                pickedImagenUri = null
                 d.dismiss()
             }
             .create()
@@ -152,22 +135,20 @@ class MainActivity : AppCompatActivity() {
                     estado = estado,
                     categoria = categoria,
                     disponible = disponible,
-                    imageUri = pickedImageUri  // Imagen seleccionada
+                    imageUri = pickedImagenUri  // Imagen seleccionada
                 )
                 // Agregar el producto a la lista y actualizar la vista
                 adapter.add(p)
 
                 // Limpiar los campos y cerrar el diálogo
                 dialogBinding = null
-                pickedImageUri = null
+                pickedImagenUri = null
                 dlg.dismiss()
             }
         }
 
         dlg.show()  // Mostrar el diálogo
     }
-
-    // Actualizar el resumen de los productos (subtotal, IGV, total)
     private fun updateResumen() {
         val subtotal = productos.sumOf { it.precio * it.cantidad }
         val igv = subtotal * 0.18
@@ -181,8 +162,6 @@ class MainActivity : AppCompatActivity() {
             append(getString(R.string.lbl_total, pref, money(total)))
         }
     }
-
-    // Función para formatear los números como moneda
     private fun money(n: Double): String {
         val loc = Locale("es", "PE")  // Configuración regional de Perú
         return String.format(loc, "%,.2f", n)  // Formatear como moneda

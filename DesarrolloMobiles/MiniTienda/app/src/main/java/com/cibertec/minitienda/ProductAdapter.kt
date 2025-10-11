@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.PopupMenu
 import androidx.recyclerview.widget.RecyclerView
 import com.cibertec.minitienda.databinding.ItemProductoBinding
+import com.google.android.material.snackbar.Snackbar
 import java.util.Locale
 
 // Adaptador para el RecyclerView que maneja los productos
