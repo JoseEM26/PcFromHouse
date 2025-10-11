@@ -11,8 +11,7 @@ import java.util.Date
 import java.util.Locale
 
 class MovAdapter (
-    private val onLongClick :(Movimiento) -> Unit
-    ): RecyclerView.Adapter<MovAdapter.VH>() {
+    private val onLongClick :(Movimiento) -> Unit): RecyclerView.Adapter<MovAdapter.VH>() {
 
         private val items= mutableListOf<Movimiento>()
         private val df=SimpleDateFormat("yyyy-MM-dd HH:mm", Locale("es","PE"))
@@ -26,7 +25,7 @@ class MovAdapter (
     inner class VH(val b:ItemMovimientoBinding):RecyclerView.ViewHolder(b.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, pos: Int): VH {
-        val b =ItemMovimientoBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        return VH(ItemMovimientoBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
 
     override fun getItemCount(): Int =items.size
