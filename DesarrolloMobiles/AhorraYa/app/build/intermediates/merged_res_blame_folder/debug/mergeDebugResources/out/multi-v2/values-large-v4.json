@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.cibertec.ahorraya.app-mergeDebugResources-33:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.cibertec.ahorraya.app-mergeDebugResources-44:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/Users/elprofeti/.gradle/caches/8.10.2/transforms/b9adfa18fbe2acb3c80aa4037f2c2a5f/transformed/appcompat-1.7.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\8.10.2\\transforms\\211d30a191bd0d4b2b02472637ccf503\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/elprofeti/.gradle/caches/8.10.2/transforms/f9a002e498c5d0f7cc7777f5924a38ff/transformed/material-1.12.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\8.10.2\\transforms\\530c8a3c4437c16b1393902a9d7eff43\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

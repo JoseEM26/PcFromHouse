@@ -14,9 +14,7 @@ import java.util.*
  * - Renderiza cada movimiento en una tarjeta Material
  * - Expone onLongClick para acciones (eliminar)
  */
-class MovAdapter(
-    private val onLongClick: (Movimiento) -> Unit
-) : RecyclerView.Adapter<MovAdapter.VH>() {
+class MovAdapter(private val onLongClick: (Movimiento) -> Unit) : RecyclerView.Adapter<MovAdapter.VH>() {
 
     private val items = mutableListOf<Movimiento>()
     private val df = SimpleDateFormat("yyyy-MM-dd HH:mm", Locale("es","PE"))

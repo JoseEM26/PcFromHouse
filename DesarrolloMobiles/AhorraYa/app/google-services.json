@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534050472519",
+    "project_id": "ahorrayaa-dab89",
+    "storage_bucket": "ahorrayaa-dab89.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534050472519:android:ae2952d5c57a22c6a26762",
+        "android_client_info": {
+          "package_name": "com.cibertec.ahorraya.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZlQ-mQ0nkmUXXykMuHbqSvhAe9yr1v6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

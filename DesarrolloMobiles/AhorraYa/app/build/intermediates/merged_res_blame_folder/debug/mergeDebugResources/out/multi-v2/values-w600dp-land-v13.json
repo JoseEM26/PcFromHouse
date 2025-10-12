@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.cibertec.ahorraya.app-mergeDebugResources-33:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.cibertec.ahorraya.app-mergeDebugResources-44:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/elprofeti/.gradle/caches/8.10.2/transforms/f9a002e498c5d0f7cc7777f5924a38ff/transformed/material-1.12.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\8.10.2\\transforms\\530c8a3c4437c16b1393902a9d7eff43\\transformed\\material-1.12.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

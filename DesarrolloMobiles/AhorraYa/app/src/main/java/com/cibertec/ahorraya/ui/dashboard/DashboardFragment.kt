@@ -31,11 +31,7 @@ class DashboardFragment : Fragment() {
     // Alcance de corrutinas ligado a la vista
     private val ui = CoroutineScope(Dispatchers.Main + SupervisorJob())
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _b = FragmentDashboardBinding.inflate(inflater, container, false)
         return b.root
     }

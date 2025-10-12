@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -48,4 +49,8 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.coroutines.android)
+    implementation(libs.firebase.auth)
+    implementation(libs.credentials)
+    implementation(libs.credentials.play.services.auth)
+    implementation(libs.googleid)
 }
