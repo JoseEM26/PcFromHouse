@@ -1,22 +1,26 @@
 [
     {
-        "merged": "com.cibertec.ahorraya.app-mergeDebugResources-45:/layout/activity_main.xml",
-        "source": "com.cibertec.ahorraya.app-main-48:/layout/activity_main.xml"
+        "merged": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-mergeDebugResources-34:/layout/activity_main.xml",
+        "source": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-main-37:/layout/activity_main.xml"
     },
     {
-        "merged": "com.cibertec.ahorraya.app-mergeDebugResources-45:/layout/fragment_historial.xml",
-        "source": "com.cibertec.ahorraya.app-main-48:/layout/fragment_historial.xml"
+        "merged": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-mergeDebugResources-34:/layout/fragment_dashboard.xml",
+        "source": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-main-37:/layout/fragment_dashboard.xml"
     },
     {
-        "merged": "com.cibertec.ahorraya.app-mergeDebugResources-45:/layout/item_movimiento.xml",
-        "source": "com.cibertec.ahorraya.app-main-48:/layout/item_movimiento.xml"
+        "merged": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-mergeDebugResources-34:/layout/fragment_historial.xml",
+        "source": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-main-37:/layout/fragment_historial.xml"
     },
     {
-        "merged": "com.cibertec.ahorraya.app-mergeDebugResources-45:/layout/fragment_dashboard.xml",
-        "source": "com.cibertec.ahorraya.app-main-48:/layout/fragment_dashboard.xml"
+        "merged": "com.cibertec.ahorraya.app-mergeDebugResources-34:/layout/fragment_historial.xml",
+        "source": "com.cibertec.ahorraya.app-main-37:/layout/fragment_historial.xml"
     },
     {
-        "merged": "com.cibertec.ahorraya.app-mergeDebugResources-45:/layout/fragment_nuevo_movimiento.xml",
-        "source": "com.cibertec.ahorraya.app-main-48:/layout/fragment_nuevo_movimiento.xml"
+        "merged": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-mergeDebugResources-34:/layout/item_movimiento.xml",
+        "source": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-main-37:/layout/item_movimiento.xml"
+    },
+    {
+        "merged": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-mergeDebugResources-34:/layout/fragment_nuevo_movimiento.xml",
+        "source": "/Users/elprofeti/.gradle/daemon/8.10.2/com.cibertec.ahorraya.app-main-37:/layout/fragment_nuevo_movimiento.xml"
     }
 ]

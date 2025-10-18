@@ -27,11 +27,11 @@
     <!-- Mensaje de lista vacía -->
     <TextView
         android:id="@+id/txtVacio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="@string/msg_lista_vacia"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <!-- Lista de movimientos -->
     <androidx.recyclerview.widget.RecyclerView

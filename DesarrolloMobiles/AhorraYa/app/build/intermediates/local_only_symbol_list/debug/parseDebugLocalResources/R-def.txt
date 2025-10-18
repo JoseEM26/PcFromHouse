@@ -56,11 +56,6 @@ string btn_exportar_csv
 string btn_guardar
 string btn_sincronizar
 string fmt_monedas
-string gcm_defaultSenderId
-string google_api_key
-string google_app_id
-string google_crash_reporting_api_key
-string google_storage_bucket
 string hint_buscar
 string hint_descripcion
 string hint_monto
@@ -73,7 +68,6 @@ string msg_guardado_ok
 string msg_lista_vacia
 string msg_monto_obligatorio
 string msg_sinc_ok
-string project_id
 string rb_gasto
 string rb_ingreso
 string tab_historial
