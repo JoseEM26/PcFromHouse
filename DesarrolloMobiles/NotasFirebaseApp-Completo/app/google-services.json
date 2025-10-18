@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "496262572471",
+    "project_id": "notas-firebase-49cae",
+    "storage_bucket": "notas-firebase-49cae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496262572471:android:0661a8dd0e1f018e556032",
+        "android_client_info": {
+          "package_name": "com.cibertec.notasfirebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaerFTk9Pk0-_ucvbgq4LSVDtXBp5Ci3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

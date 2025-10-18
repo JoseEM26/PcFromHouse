@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">NotasFirebaseApp</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_register">Registrarse</string>
+    <string name="msg_complete_fields">Completa todos los campos</string>
+    <string name="msg_user_registered">Usuario registrado</string>
+    <string name="msg_error">Error: %1$s</string>
+    <string name="hint_title">Título</string>
+    <string name="hint_description">Descripción</string>
+    <string name="btn_add_note">Guardar nota</string>
+    <string name="title_delete">Eliminar nota</string>
+    <string name="msg_delete_confirm">¿Deseas eliminar esta nota?</string>
+    <string name="btn_yes">Sí</string>
+    <string name="btn_no">No</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="msg_note_saved">Nota guardada</string>
+    <string name="msg_note_deleted">Nota eliminada</string>
+    <string name="msg_note_updated">Nota actualizada</string>
+    <string name="title_edit_note">Editar nota</string>
+    <string name="btn_update">Actualizar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="empty_list">Aún no tienes notas. Crea tu primera nota.</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="cd_note_item">Nota: %1$s</string>
+    <string name="hint_correo">@string/hint_email</string>
+    <string name="hint_contrasena">@string/hint_password</string>
+    <string name="btn_iniciar_sesion">@string/btn_login</string>
+    <string name="btn_registrarse">@string/btn_register</string>
+</resources>
