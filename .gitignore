@@ -163,3 +163,40 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/git,java,maven,eclipse,windows
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+*.log
+
+# Java / Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+.mvn/timing.properties
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.factorypath
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
